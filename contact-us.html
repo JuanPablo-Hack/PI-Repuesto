@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>PapelFast || Contacto</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/pe-icons.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <script src="js/jquery.js"></script>
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/images/ico/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57x57.png">
+
+    <script type="text/javascript">
+    jQuery(document).ready(function($){
+    'use strict';
+        jQuery('body').backstretch([
+            "http://placehold.it/800x600",
+            "http://placehold.it/800x600",
+            "http://placehold.it/800x600"
+        ], {duration: 5000, fade: 500});
+
+        $("#mapwrapper").gMap({ controls: false,
+            scrollwheel: false,
+            markers: [{     
+                latitude:40.7566,
+                longitude: -73.9863,
+            icon: { image: "images/marker.png",
+                iconsize: [44,44],
+                iconanchor: [12,46],
+                infowindowanchor: [12, 0] } }],
+            icon: { 
+                image: "images/marker.png", 
+                iconsize: [26, 46],
+                iconanchor: [12, 46],
+                infowindowanchor: [12, 0] },
+            latitude:40.7566,
+            longitude: -73.9863,
+            zoom: 14 });
+    });
+    </script>
+</head><!--/head-->
+<body>
+<div id="preloader"></div>
+    <header class="navbar navbar-inverse navbar-fixed-top opaqued" role="banner">
+    <div id="search-wrapper">
+        <div class="container">
+            <input id="search-box" placeholder="Search">
+        </div>
+    </div>
+    </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html"><h1><span class="pe-7s-gleam bounce-in"></span> IMPACT</h1></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                     <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about-us.html">Acerca</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="contact-us.html">Contacto</a></li> 
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tienda<i class="icon-angle-down"></i></a>
+                    </li>
+                    <li><span class="search-trigger"><i class="fa fa-search"></i></span></li>
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+
+    <section id="single-page-slider" class="no-margin">
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="center gap fade-down section-heading">
+                                    <h2 class="main-title">Contáctanos</h2>
+                                    <hr>
+                                    <p>Ven y conocenos para que puedas disfrutar de nuestros servicios.</p>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div><!--/.item-->
+            </div><!--/.carousel-inner-->
+        </div><!--/.carousel-->
+    </section><!--/#main-slider-->
+
+    <div id="content-wrapper">
+        <section id="contact" class="white">
+            <div class="container">
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4 fade-up">
+                        <h3>Información del Conctacto</h3>
+                            <p><span class="icon icon-home"></span>Av. Paseo de las Gaviotas No.54 Loc 1 y 2<br/>
+                                <span class="icon icon-phone"></span>Colonia Soleares<br/>
+                                <span class="icon icon-mobile"></span>+36 65984 405<br/>
+                                <span class="icon icon-envelop"></span> <a href="#">papeleriaofficesupplies@gmail.com</a> <br/>
+                                <span class="icon icon-facebook"></span> <a href="#">Papelería Office Supplies</a> <br/>
+                            </p>
+                    </div><!-- col -->
+                
+                    <div class="col-md-8 fade-up">
+                        <h3>Déjanos un mensaje</h3>
+                        <br>
+                        <br>
+                        <div id="message"></div>
+                        <form method="post" action="sendemail.php" id="contactform">
+                            <input type="text" name="name" id="name" placeholder="Nombre" />
+                            <input type="text" name="email" id="email" placeholder="Email" />
+                            <input type="text" name="telefono" id="website" placeholder="Télefono" />
+                            <textarea name="comments" id="comments" placeholder="Mensaje"></textarea>
+                            <input class="btn btn-outlined btn-primary" type="submit" name="submit" value="Submit" />
+                        </form>
+                    </div><!-- col -->
+                </div><!-- row -->  
+                <div class="gap"></div>         
+            </div>
+            <center><<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942.5230826612232!2d-104.32351407079408!3d19.103604999191987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8424d67a26fd45bd%3A0x87f015d6ba2a4fcd!2sPapelerias+%22Costalegre%22!5e0!3m2!1ses!2smx!4v1550615950771" width="1200" height="600" frameborder="0" style="border:0" allowfullscreen></iframe></center>
+        </section>
+
+    </div>
+
+
+    <div id="footer-wrapper">
+        <section id="bottom" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 about-us-widget">
+                        <h4>Llegamos muy lejos</h4>
+                        <p>Puedes usar PapelFast desde cualquier parte del mundo desde tu dispositivo movil o tu computadora escritorio, a cualquier hora de cualquier día de la la semana.</p>
+                    </div><!--/.col-md-3-->
+
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Metas</h4>
+                        <div>
+                            <ul class="arrow">
+                                <li><a href="#">Contacto con el Cliente</a></li>
+                                <li><a href="#">Mejor Servicio</a></li>
+                                <li><a href="#">Entregas inmediatas</a></li>
+                                <li><a href="#">Seguridad al cliente</a></li>
+                            </ul>
+                        </div>
+                    </div><!--/.col-md-3-->
+
+                   
+
+                    <div class="col-md-3 col-sm-6">
+                         <h4>Visitanós</h4>
+                        <address>
+                            <strong>Av. Paseo de las Gaviotas</strong><br>
+                            Manzanillo,Col<br>
+                            No.54 Loc 1 y 2<br>
+                            <abbr title="Phone"><i class="fa fa-phone"></i></abbr> 546 840654 05
+                        </address>
+                    </div> <!--/.col-md-3-->
+                </div>
+            </div>
+        </section><!--/#bottom-->
+
+        <footer id="footer" class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        &copy; 2019 <a target="_blank" href="http://www.distinctivethemes.com" title="Premium Themes and Templates">PapelFast</a>. 
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="pull-right">
+                            <li><a id="gototop" class="gototop" href="#"><i class="fa fa-chevron-up"></i></a></li><!--#gototop-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer><!--/#footer-->
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/plugins.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWDPCiH080dNCTYC-uprmLOn2mt2BMSUk&amp;sensor=true"></script>
+    <script src="js/init.js"></script>
+</body>
+</html>
